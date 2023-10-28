@@ -43,7 +43,7 @@ def updateMovie():
                 Movies[i][1] == NombreNuevo
                 Movies[i][2] == GeneroNuevo
                 return jsonify({"message":"Los datos se han actualizado Exitosamente","idk":NombreNuevo})
-            else:
+            elif i == len(Movies):
                 return jsonify({"message":"no se encontro la pelicula"})
 
 
